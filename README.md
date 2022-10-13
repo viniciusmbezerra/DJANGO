@@ -56,6 +56,26 @@ pip install pytest-watch
 ptw # testes ao vivo
 ```
 
+Forçando falha de um teste
+```python
+class AppTest(TestCase):
+  ...
+  def test_exemplo(self):
+    ...
+    self.fail('Mensagem') # 
+  ...
+```
+
+Pulando um teste
+```python
+from unittest import skip
+
+class AppTest(TestCase):
+  @skip('Mensagem')
+  def test_exemplo(self):
+    ...
+```
+
 Instalando django
 ```
 pip install django
