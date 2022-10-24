@@ -132,8 +132,13 @@ def tearDown(self) -> None:
   return super().tearDown()
 ```
 
+## MTV
+[Model Template View](https://docs.djangoproject.com/en/4.1/faq/general/#faq-mtv)
+
 ## URLs
 
 ## Views
 
 ## Templates
+
+## Forms
