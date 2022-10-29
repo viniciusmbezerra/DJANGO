@@ -139,6 +139,9 @@ def tearDown(self) -> None:
 Para projetar URLs para uma aplicação, você cria um módulo Python que chamamos de URLconf. Uma tabela de conteúdos para sua aplicação, contendo um mapeamento entre padrões de URL e funções Python. URLconfs também servem para desacoplar as URLs do código Python.
 
 ## Views
+Cada view é responsável por fazer uma entre duas coisas: Devolver um objeto HttpResponse contendo o conteúdo para a página requisitada, ou levantar uma exceção como Http404. O resto é com você.
+
+Geralmente, uma view recupera dados de acordo com os parâmetros, carrega um template e renderiza o template com os dados recuperados.
 
 ## Templates
 
