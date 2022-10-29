@@ -144,5 +144,6 @@ Cada view é responsável por fazer uma entre duas coisas: Devolver um objeto Ht
 Geralmente, uma view recupera dados de acordo com os parâmetros, carrega um template e renderiza o template com os dados recuperados.
 
 ## Templates
+O Django tem um caminho de pesquisa para templates, o qual permite a você minimizar a redundância entre templates. Nas configurações do Django, você especifica uma lista de diretórios para procurar por templates em DIRS. Se um template não existir no primeiro diretório, ele verifica o segundo e assim por diante.
 
 ## Forms
