@@ -136,6 +136,7 @@ def tearDown(self) -> None:
 [Model Template View](https://docs.djangoproject.com/en/4.1/faq/general/#faq-mtv)
 
 ## URLs
+Para projetar URLs para uma aplicação, você cria um módulo Python que chamamos de URLconf. Uma tabela de conteúdos para sua aplicação, contendo um mapeamento entre padrões de URL e funções Python. URLconfs também servem para desacoplar as URLs do código Python.
 
 ## Views
 
