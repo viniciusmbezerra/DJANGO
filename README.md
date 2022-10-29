@@ -147,3 +147,10 @@ Geralmente, uma view recupera dados de acordo com os parâmetros, carrega um tem
 O Django tem um caminho de pesquisa para templates, o qual permite a você minimizar a redundância entre templates. Nas configurações do Django, você especifica uma lista de diretórios para procurar por templates em DIRS. Se um template não existir no primeiro diretório, ele verifica o segundo e assim por diante.
 
 ## Forms
+No coração deste sistema de componentes está a classe Form do Django. Mais ou menos como o modelo do Django descreve a estrutura lógica de um objeto, seu comportamento, e a maneira como suas partes são apresentadas para nós, uma classe Form descreve um formulário e determina como este funciona e aparece.
+
+De maneira similar que a classe de modelo mapeia os campos para o banco de dados, uma classe de formulário mapeia para os elementos <input> do formulário HTML. (Uma ModelForm mapeia os campos de uma classe de modelo para elementos <input> do formulário HTML através da Form; o admin do Django é baseado nisso.)
+
+Os campos dos formulários são eles próprios classes; eles manipulam dados do formulário e fazem validações quando o formulário é enviado. A DateField e a FileField lidam com tipos de dados muito diferentes e tem que fazer coisas diferentes com isso.
+
+Um campo de formulário, para o usuário, é representado como um “widget” HTML - um pedaço do maquinário de interface do usuário. Cada campo tem uma classe de Widget padrão, mas isso pode ser sobrescrito quando requerido.
